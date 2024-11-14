@@ -13,3 +13,16 @@ $ cargo build --target thumbv7em-none-eabihf
 ```console
 $ cargo rustc -- -C link-args="-e __start -static -nostartfiles"
 ```
+
+## `target x86_64-blog_os.json`
+
+```console
+$ cargo build --target x86_64-blog_os.json
+```
+
+### How to enable the `nightly` feature
+
+```console
+$ rustup install nightly
+$ rustup override set nightly
+```
